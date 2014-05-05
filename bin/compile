@@ -2,7 +2,9 @@
 set -e
 
 apt-get update
-apt-get -y install nginx
+apt-get -y install nginx, nodejs, npm
+
+ls -la
 
 BINDIR=$(dirname "$0")
 
