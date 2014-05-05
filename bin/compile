@@ -2,9 +2,13 @@
 set -e
 
 apt-get update
-apt-get -y install nginx, nodejs, npm
+apt-get -y install nginx
 
 ls -la
+
+npm install
+bower install
+grunt build
 
 BINDIR=$(dirname "$0")
 
